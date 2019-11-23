@@ -36,6 +36,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMf-aX-agD">
                                                     <rect key="frame" x="297" y="0.0" width="46" height="30.5"/>
                                                     <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="seenTappedButton:" destination="S7C-cJ-uNy" eventType="touchUpInside" id="5Oz-fi-dCH"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </stackView>
@@ -47,6 +50,10 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="9B1-f1-zug" secondAttribute="bottom" id="zi3-Om-eId"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="khb-Fc-DO1" id="5nl-xz-1aM"/>
+                                    <outlet property="seenButton" destination="OMf-aX-agD" id="qDw-6i-0QR"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -88,6 +95,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tii-Yi-RMl">
                                 <rect key="frame" x="20" y="201" width="335" height="30"/>
                                 <state key="normal" title="Add Movie"/>
+                                <connections>
+                                    <action selector="addMovieTappedButton:" destination="A4t-m6-6oK" eventType="touchUpInside" id="rG6-aE-YVa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -107,6 +117,9 @@
                         <viewLayoutGuide key="safeArea" id="E9Z-kO-7iM"/>
                     </view>
                     <navigationItem key="navigationItem" id="5sX-nb-BOP"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="bcl-cB-ze7" id="qZp-tg-48T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Yp-a0-qtj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
