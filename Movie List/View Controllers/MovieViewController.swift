@@ -27,7 +27,7 @@ class MovieViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        return .init()
     }
     
     func tappedSeenButton(on cell: MovieTableViewCell) {
