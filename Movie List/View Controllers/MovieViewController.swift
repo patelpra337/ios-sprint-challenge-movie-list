@@ -22,12 +22,26 @@ class MovieViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.movieTableView.reloadData()
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.movieController.movies.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return .init()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as? MovieTableViewCell else { return UITableViewCell() }
+        
+        let movie = self.movieController.movies[indexPath.row]
+        cell.nameLabel.text = movie.name
+        cell.delegate = self
+        let seenText = movie.isSeen ? "Seen" : "Not Seen"
+        cell.seenButton.setTitle(seenText, for: .normal)
+        
+        return cell
     }
     
     func tappedSeenButton(on cell: MovieTableViewCell) {
@@ -39,9 +53,9 @@ class MovieViewController: UIViewController, UITableViewDelegate, UITableViewDat
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ToAddMovie" {
-            guard let addMovieVC = segue.destination as? AddMovieViewController else { return }
+            guard let addMovieViewController = segue.destination as? AddMovieViewController else { return }
             
-            addMovieVC.movieController = self.movieController
+            addMovieViewController.movieController = self.movieController
         }
     }
 }

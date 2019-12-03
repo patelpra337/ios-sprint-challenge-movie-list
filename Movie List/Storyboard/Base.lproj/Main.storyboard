@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aWW-qx-EEL">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -13,28 +13,28 @@
             <objects>
                 <tableViewController id="aWA-6d-OG2" customClass="MovieViewController" customModule="Movie_List" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jhQ-n2-AUA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" id="S7C-cJ-uNy" customClass="MovieTableViewCell" customModule="Movie_List" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="52.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="52.333332061767578"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S7C-cJ-uNy" id="6CB-9x-s2a">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="52.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="52.333332061767578"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="255" translatesAutoresizingMaskIntoConstraints="NO" id="9B1-f1-zug">
-                                            <rect key="frame" x="16" y="11" width="343" height="30.5"/>
+                                            <rect key="frame" x="20" y="10.999999999999998" width="374" height="30.333333333333329"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khb-Fc-DO1">
-                                                    <rect key="frame" x="0.0" y="0.0" width="42" height="30.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="41.666666666666664" height="30.333333333333332"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMf-aX-agD">
-                                                    <rect key="frame" x="297" y="0.0" width="46" height="30.5"/>
+                                                    <rect key="frame" x="296.66666666666669" y="0.0" width="77.333333333333314" height="30.333333333333332"/>
                                                     <state key="normal" title="Button"/>
                                                     <connections>
                                                         <action selector="seenTappedButton:" destination="S7C-cJ-uNy" eventType="touchUpInside" id="5Oz-fi-dCH"/>
@@ -81,22 +81,22 @@
             <objects>
                 <viewController id="A4t-m6-6oK" customClass="AddMovieViewController" customModule="Movie_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hUR-6u-Pva">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the movie's title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bcl-cB-ze7">
-                                <rect key="frame" x="20" y="159" width="335" height="34"/>
+                                <rect key="frame" x="20" y="203" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a new movie to the list" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYd-Hg-oSe">
-                                <rect key="frame" x="20" y="116" width="335" height="35"/>
+                                <rect key="frame" x="20" y="160" width="374" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tii-Yi-RMl">
-                                <rect key="frame" x="20" y="201" width="335" height="30"/>
+                                <rect key="frame" x="20" y="245" width="374" height="30"/>
                                 <state key="normal" title="Add Movie"/>
                                 <connections>
                                     <action selector="addMovieTappedButton:" destination="A4t-m6-6oK" eventType="touchUpInside" id="rG6-aE-YVa"/>
@@ -134,7 +134,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aWW-qx-EEL" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="0Ml-qn-zwI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

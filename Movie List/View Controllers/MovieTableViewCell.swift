@@ -6,7 +6,6 @@
 //  Copyright © 2019 Lambda School. All rights reserved.
 //
 
-
 import UIKit
 
 protocol MovieTableViewCellDelegate: class {
